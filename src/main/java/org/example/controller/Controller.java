@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     @PostMapping("/hello/{text}")
-    public String counter(@PathVariable("text") String text) {
+    public String actuator(@PathVariable("text") String text) {
         log.debug("Received a request for greeting with name: {}", text);
 
         return "Hello " + text;
